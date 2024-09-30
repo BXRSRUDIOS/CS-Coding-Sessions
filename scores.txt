@@ -1,0 +1,400 @@
+Round 1
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 6 
+          Player 1 Second Roll - 6
+          Player 1 Bonus Roll - 1
+          Player 1 Dice Total - 13
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 2
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 6
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 4
+
+Round 2
+Both Players Drew
+Analysis Board
+          Player 1 First Roll - 3 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 8
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 2
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 6
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 4
+
+Round 3
+Both Players Drew
+Analysis Board
+          Player 1 First Roll - 2 
+          Player 1 Second Roll - 3
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 5
+
+          Player 2 First Roll - 1 
+          Player 2 Second Roll - 5
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 6
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 4
+
+Round 4
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 1 
+          Player 1 Second Roll - 2
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 3
+
+          Player 2 First Roll - 2 
+          Player 2 Second Roll - 3
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 5
+
+          Player 1 Points Scored - 0
+          Player 2 Points Scored - 4
+
+Round 5
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 1
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 3 
+          Player 2 Second Roll - 6
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 9
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 6
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 1 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 5 
+          Player 2 Second Roll - 4
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 9
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 7
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 6
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 11
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 5
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 4
+
+Round 8
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 3 
+          Player 1 Second Roll - 3
+          Player 1 Bonus Roll - 2
+          Player 1 Dice Total - 8
+
+          Player 2 First Roll - 3 
+          Player 2 Second Roll - 2
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 5
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 4
+
+Round 9
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 6 
+          Player 1 Second Roll - 2
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 8
+
+          Player 2 First Roll - 1 
+          Player 2 Second Roll - 2
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 3
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 0
+
+Round 10
+Both Players Drew
+Analysis Board
+          Player 1 First Roll - 2 
+          Player 1 Second Roll - 4
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 3 
+          Player 2 Second Roll - 5
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 8
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 4
+
+Round 11
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 1 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 6 
+          Player 2 Second Roll - 4
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 10
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 12
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 6 
+          Player 1 Second Roll - 6
+          Player 1 Bonus Roll - 4
+          Player 1 Dice Total - 16
+
+          Player 2 First Roll - 2 
+          Player 2 Second Roll - 6
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 8
+
+          Player 1 Points Scored - 12
+          Player 2 Points Scored - 4
+
+Round 13
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 3 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 8
+
+          Player 2 First Roll - 6 
+          Player 2 Second Roll - 4
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 10
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 14
+Both Players Drew
+Analysis Board
+          Player 1 First Roll - 2 
+          Player 1 Second Roll - 3
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 5
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 5
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 4
+
+Round 15
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 3 
+          Player 1 Second Roll - 6
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 9
+
+          Player 2 First Roll - 2 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 3
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 0
+
+Round 16
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 1
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 5
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 9
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 17
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 1 
+          Player 1 Second Roll - 2
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 3
+
+          Player 2 First Roll - 5 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 6
+
+          Player 1 Points Scored - 0
+          Player 2 Points Scored - 4
+
+Round 18
+Both Players Drew
+Analysis Board
+          Player 1 First Roll - 3 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 8
+
+          Player 2 First Roll - 5 
+          Player 2 Second Roll - 3
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 8
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 4
+
+Round 19
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 1
+          Player 1 Dice Total - 11
+
+          Player 2 First Roll - 3 
+          Player 2 Second Roll - 2
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 5
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 4
+
+Round 20
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 4 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 9
+
+          Player 2 First Roll - 2 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 3
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 0
+
+Round 21
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 5
+          Player 1 Bonus Roll - 1
+          Player 1 Dice Total - 11
+
+          Player 2 First Roll - 6 
+          Player 2 Second Roll - 6
+          Player 2 Bonus Roll - 6
+          Player 2 Dice Total - 18
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 12
+
+Round 22
+Player 1 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 4
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 9
+
+          Player 2 First Roll - 3 
+          Player 2 Second Roll - 5
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 8
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 4
+
+Round 23
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 6
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 11
+
+          Player 2 First Roll - 6 
+          Player 2 Second Roll - 6
+          Player 2 Bonus Roll - 1
+          Player 2 Dice Total - 13
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 10
+
+Round 24
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 5 
+          Player 1 Second Roll - 1
+          Player 1 Bonus Roll - 0
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 4 
+          Player 2 Second Roll - 6
+          Player 2 Bonus Roll - 0
+          Player 2 Dice Total - 10
+
+          Player 1 Points Scored - 4
+          Player 2 Points Scored - 10
+
+Round 25
+Player 2 Wins
+Analysis Board
+          Player 1 First Roll - 2 
+          Player 1 Second Roll - 2
+          Player 1 Bonus Roll - 2
+          Player 1 Dice Total - 6
+
+          Player 2 First Roll - 1 
+          Player 2 Second Roll - 1
+          Player 2 Bonus Roll - 6
+          Player 2 Dice Total - 8
+
+          Player 1 Points Scored - 10
+          Player 2 Points Scored - 10
+
