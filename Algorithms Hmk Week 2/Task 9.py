@@ -1,13 +1,15 @@
+'''
+Task 9
+Write an algorithm which is going to take a string value, the algorithm should output the amount of lower- and upper-case characters 
+contained within the string value.
+'''
 
-gtin7 = input("Enter a 7 digit number")
-sumGTIN7 = 0
-alternator=3
-for i in range(0, len(gtin7)):
-    sumGTIN7 += alternator*int(gtin7[i])
-    if alternator == 3:
-        alternator = 1
-    elif alternator == 1:
-        alternator = 3
-checkdigit = 50-sumGTIN7
-gtin8=gtin7+str(checkdigit)
-print(gtin8)
+strMessage = input("Enter a message")
+upper, lower = 0, 0
+for i in range(len(strMessage)):
+    if strMessage[i].isupper():
+        upper+=1
+    elif strMessage[i].islower():
+        lower+=1
+
+print(f"Number of Upper Case Characters: {upper}. Number of Lower Case Characters: {lower}.")

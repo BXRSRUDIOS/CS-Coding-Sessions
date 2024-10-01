@@ -1,34 +1,18 @@
+'''
+Task 4
+At a synchronised swimming competition each team is given a score out of 10 by each of six judges. 
+The (possibly joint) highest and (possibly joint lowest) are discarded, and the teams score is then calculated by adding together 
+the remaining four scores.
 
-items = 0
-weight = 0
-charge = 0
-accepted = 0
-rejected = 0
+Using pseudocode, write an algorithm that accepts six numbers and outputs the score, calculated as described above.
+'''
 
-luggage = [24, 11, 32, 9, 24, 20, 6, 19, 13, 25, 5, 26, 17, 9, 13, 35]
+# Initialise teamScores & Accept team scores
+teamScores = [int(input(f"Enter score number {i+1}")) for i in range(0,6)]
 
-for weight in luggage:
-    if weight > 50:
-        extra_weight = weight - 50
-        charge += extra_weight * 10
-        weight += 50
-        rejected+=1
-    elif weight > 35:
-        extra_weight = weight - 35
-        charge += extra_weight * 7.50
-        weight += 35
-        rejected+=1
-    elif weight > 25:
-        extra_weight = weight - 25
-        charge += extra_weight * 5
-        weight += 25
-        rejected+=1
-    else:
-        weight += weight
-        accepted+=1
-    items += 1
-print(f"Total number of items: {items}")
-print(f"Total weight of accepted luggage: {weight}kg")
-print(f"Total charge for excess luggage: £{charge}")
-print(f"Total number of (hypothetically) rejected items: {rejected}")
-print(f"Total number of (hypothetically) accepted items: {accepted}")
+# Discard max and min
+teamScores.remove(max(teamScores))
+teamScores.remove(min(teamScores))
+
+# Output final score
+print(f"Team Final Score: {sum(teamScores)} Points")

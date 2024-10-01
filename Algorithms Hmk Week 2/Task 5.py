@@ -1,97 +1,44 @@
-"""Write an algorithm which has a function which is going work out
-the score of 2 dice. The function should take 2 dice throws as
-parameters add the 2 numbers together. If the total is greater
-than 8 then the player should score 10 points, greater than 4
-then add 4 points. If the 2 dice are the same then the player
-should be given an extra dice to throw. If the combined total is
-greater than 15 then the player should score 12 points. The
-totals from each of the dice throws should also be added
-together to give the grand total.
+'''
+Task 5
+The manager of a cricket teams wants some information on the performance of the teams batting over the course of the last season. 
+The team have played 15 matches and the scores of each of the 11 players in the team need to be analysed. 
+The scores are stored in a 2D array called arrayscores
 
-Adapt this function so that it allows 2 players to play the game
-and output which one has scored the highest score"""
+Write an algorithm for a program which is going to work out
+1)Players total Number of runs scored in the season over the 15 matches
+2) Players average, highest and lowest scores
 
-import random as r
-import time
+The algorithm should output the players Number with the highest average score
+'''
 
-# The Function
-startTime = time.time()
-def diceScoreCalculator(playerRoll1, playerRoll2):
-    total = playerRoll1 + playerRoll2
-    score = 0
-    bonusRoll = 0
-    if playerRoll1 == playerRoll2:
-        bonusRoll = r.randint(1,6)
-        total += bonusRoll
-        if total > 15:
-            score = 12
-        else:
-            score = 10
-    elif total > 8:
-        score = 10
-    elif total > 4:
-        score = 4
-    else:
-        score = 0
-    return [score, bonusRoll]
+import random
 
-for i in range(1,26):
-    with open("scores.txt", "a") as f:
-        player1Roll1 = r.randint(1,6)
-        player1Roll2 = r.randint(1,6)
-        player2Roll1 = r.randint(1,6)
-        player2Roll2 = r.randint(1,6)
-        scoreP1 = diceScoreCalculator(player1Roll1, player1Roll2)
-        scoreP2 = diceScoreCalculator(player2Roll1, player2Roll2)
-        if scoreP1[0] > scoreP2[0]:
-            message1="Player 1 Wins"
-            message2=f"""Analysis Board
-          Player 1 First Roll - {player1Roll1} 
-          Player 1 Second Roll - {player1Roll2}
-          Player 1 Bonus Roll - {scoreP1[1]}
-          Player 1 Dice Total - {player1Roll1+player1Roll2+scoreP1[1]}
+# Initialise arrayScores & Generate random scores for 11 players over 15 matches. Each player's score across 15 matches are stored in 
+# each sublist with each of the 11 players getting their own sublist to make individual total, average, highest and lowest scores
+arrayScores = [[random.randint(1,100) for i in range(0,15)] for i in range(0,11)]
+totalScores, highestScores, lowestScores, averageScores = [], [], [], []
 
-          Player 2 First Roll - {player2Roll1} 
-          Player 2 Second Roll - {player2Roll2}
-          Player 2 Bonus Roll - {scoreP2[1]}
-          Player 2 Dice Total - {player2Roll1+player2Roll2+scoreP2[1]}
+# Calculate each players total, average, highest & lowest scores and store them in their respective lists
+for i in range(0,11):
+    tempTotal, tempHighest, tempLowest, tempAverage = 0, 0, 100, 0
+    for j in range(0,15):
+        tempTotal += arrayScores[i][j]
+        if arrayScores[i][j] > tempHighest:
+            tempHighest = arrayScores[i][j]
+        elif arrayScores[i][j] < tempLowest:
+            tempLowest = arrayScores[i][j]
+    tempAverage = round(tempTotal/15, 1)
+    totalScores.append(tempTotal)
+    averageScores.append(tempAverage)
+    highestScores.append(tempHighest)
+    lowestScores.append(tempLowest)
+    
+highestScore = f"The highest score was from Player {highestScores.index(max(highestScores))+1} who achieved {max(highestScores)} points"
+lowestScore = f"The lowest score was from Player {lowestScores.index(max(lowestScores))+1} who achieved {max(lowestScores)} points"
+highestAverageScore = f"The highest average score was from Player {averageScores.index(max(averageScores))+1} who achieved {max(averageScores)} points on average across the 15 games"
+highestTotalScore = f"The highest total score was from Player {totalScores.index(max(totalScores))+1} who achieved {max(totalScores)} points in total across the 15 games"
 
-          Player 1 Points Scored - {scoreP1[0]}
-          Player 2 Points Scored - {scoreP2[0]}"""
-        elif scoreP2 > scoreP1:
-            message1=f"Player 2 Wins"
-            message2=f"""Analysis Board
-          Player 1 First Roll - {player1Roll1} 
-          Player 1 Second Roll - {player1Roll2}
-          Player 1 Bonus Roll - {scoreP1[1]}
-          Player 1 Dice Total - {player1Roll1+player1Roll2+scoreP1[1]}
-
-          Player 2 First Roll - {player2Roll1} 
-          Player 2 Second Roll - {player2Roll2}
-          Player 2 Bonus Roll - {scoreP2[1]}
-          Player 2 Dice Total - {player2Roll1+player2Roll2+scoreP2[1]}
-
-          Player 1 Points Scored - {scoreP1[0]}
-          Player 2 Points Scored - {scoreP2[0]}"""
-        elif scoreP1 == scoreP2:
-            message1=f"Both Players Drew"
-            message2=f"""Analysis Board
-          Player 1 First Roll - {player1Roll1} 
-          Player 1 Second Roll - {player1Roll2}
-          Player 1 Bonus Roll - {scoreP1[1]}
-          Player 1 Dice Total - {player1Roll1+player1Roll2+scoreP1[1]}
-
-          Player 2 First Roll - {player2Roll1} 
-          Player 2 Second Roll - {player2Roll2}
-          Player 2 Bonus Roll - {scoreP2[1]}
-          Player 2 Dice Total - {player2Roll1+player2Roll2+scoreP2[1]}
-
-          Player 1 Points Scored - {scoreP1[0]}
-          Player 2 Points Scored - {scoreP2[0]}"""
-        f.write(f"Round {i}\n")
-        f.write(message1+"\n")
-        f.write(message2+"\n\n")
-        f.close()
-endTime = time.time()
-totalTime = endTime-startTime
-print(round(totalTime,2))
+print(highestScore)
+print(lowestScore)
+print(highestAverageScore)
+print(highestTotalScore)

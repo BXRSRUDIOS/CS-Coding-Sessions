@@ -1,46 +1,38 @@
-'''TraviBank has just installed an ATM machine at its local branch and
-has asked you to write an algorithm which to be used to access users
-accounts. The program should allow the user 3 attempts to enter the
-correct number. The program needs to be able to validate that the PIN
-number entered is a 4 digit number entered. The program should tell
-the user each time if the attempt is successful or not. The user should
-be given the option of either re-entering the number of withdrawing
-their card if the attempt is unsuccessful. If after 3 attempts the program
-should output then the attempt was unsuccessful and no further
-attempts are permitted.
+'''
+Task 2
+Two players are each playing a game with a pack of cards. Each player has a hand of cards stored in an array called P1 or
+P2 Hand.
 
-Write the algorithm in the form of a flowchart and pseudocode'''
+Player 2 also has a hand of cards stored as a 1D array, p2Hand. Each player has a set number of moves to try to get rid of their cards. 
+At the end of the game, the values of the cards in eacin hand are totalled, and the player with the smallest total wins.
 
-pin = 2345
-attempts = 0
-while attempts != 3:
-    if attempts != 2:
-        guess = int(input("Enter pin"))
-        if len(str(guess)) == 4:
-            if guess == pin:
-                print("Correct")
-                attempts = 3
-            else:
-                attempts+=1
-                tryAgain = input("Incorrect Pin. Try again? Y/n")
-                if tryAgain == "n":
-                    attempts = 3
-        else:
-            attempts+=1
-            tryAgain = input("Invalid Length. Try again? Y/n")
-            if tryAgain == "n":
-                attempts = 3
-    else:
-        guess = int(input("Enter pin"))
-        if len(str(guess)) == 4:
-            if guess == pin:
-                print("Correct")
-                attempts = 3
-            else:
-                attempts+=1
-                print("Incorrect. Account Locked")
-        else:
-            attempts+=1
-            print("Incorrect. Account Locked")
-        
+Write a pseudocode algorithm that:
+• adds together all the values in p1Hand
+• adds together all the values in p2Hand
+• compares the totals and outputs which player has the smallest number, or if there is a draw 
+Make your algorithm efficient and comment your pseudocode.
+'''
 
+# Importing Random Module to Help with initialising the array decks
+import random
+
+# Initialising p1Hand & p2Hand
+# Each player can have a maximum of cards if a card deck is split in half
+# We will assume that there are more than 4 variants of card (would not be the case in a normal deck) for efficiency with the code
+p1Hand = [random.randint(1,13) for i in range(random.randint(1,26))]
+p2Hand = [random.randint(1,13) for i in range(random.randint(1,26))]
+
+# Find the sum of each hand & declare emptry string for winner 
+sumP1 = sum(p1Hand)
+sumP2 = sum(p2Hand)
+winner = ""
+
+# Compare who got the smallest and store the winner text in winner to output
+if sumP1 > sumP2:
+    winner = f"Player 2 wins. P1 got {sumP1} and P2 got {sumP2}"
+elif sumP2 > sumP1:
+    winner = f"Player 1 wins. P1 got {sumP1} and P2 got {sumP2}"
+else:
+    winner = f"Draw. P1 got {sumP1} and P2 got {sumP2}"
+
+print(winner)

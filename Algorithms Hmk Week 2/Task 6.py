@@ -1,17 +1,29 @@
+'''
+Task 6
+Congratulations you have a baby brother arrived yesterday and in a fit of madness your parents have decided to name him using 
+the last 3 letters of your first name, 3 letters selected at random and then the last 3 characters of your surname, 
+they also want to stick at the end 3 random numbers between 0 and 9 for good measure.
 
-test1 = [44, 34, 87, 45, 98, 1, 21, 85, 82, 29, 72, 61, 15, 54]
-test2 = [19, 52, 99, 51, 80, 86, 80, 22, 80, 30, 46, 17, 78, 36]
-test3 = [4, 34, 78, 26, 29, 15, 95, 7, 99, 99, 24, 47, 28, 51]
-highest = []
-lowest = []
-average = []
+Write an algorithm as a function to return the new name.
+This will involve using string slicing, the function must have parameters passed in.
+Adapt your algorithm to produce 3 random names
+'''
 
-for i in range(len(test1)):
-    tempScores = [test1[i],test2[i],test3[i]]
-    highest.append(f"Boy {i} Highest: {max(tempScores)}")
-    lowest.append(f"Boy {i} Lowest: {min(tempScores)}")
-    average.append(f"Boy {i} Average: {round(sum(tempScores)/3, 2)}")
+import random
 
-print(highest)
-print(lowest)
-print(average)
+# Initialise names to store 3 random names & letters to store all the random letters
+names = []
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+# Create 3 baby names
+for i in range(0,3):
+    fName = input(f"Enter first name {i+1}")
+    sName = input(f"Enter surname {i+1}")
+
+    babyName = fName[-3:]
+    for j in range(0,3):
+        babyName += letters[random.randint(0, len(letters)-1)]
+    babyName = babyName + sName[-3:] + str(random.randint(100,999))
+    
+    names.append(babyName)
+print(names)

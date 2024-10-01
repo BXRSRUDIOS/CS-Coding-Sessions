@@ -1,22 +1,11 @@
-'''a) Write an algorithm which is going to take in a
-10 digit number for example 9876543212 takes
-each digit from the number and multiplies it first
-by 10 then 9 , 8 etc down to 0 and produces a
-total and then outputs it.
+'''
+Task 8
+Write a function as an algorithm which is going to take in a string message and output the ASCII characters of that message. 
+Adapt the algorithm so that it adds on 2 to the ASCII value and outputs that value
+'''
+strMessage = input("Enter a message")
 
-b) At the end of the iteration add some code
-which is going to work out the modulus of the total
-when divided by 11 and output that result'''
-
-isbn10 = input("Enter a ten digit number")
-sumISBN10 = 0
-count=0
-for i in range(11, 1, -1):
-    sumISBN10 += i*int(isbn10[count])
-    count+=1
-checkdigit = 11-(sumISBN10%11)
-if checkdigit == 10:
-    isbn11 = isbn10+"X"
-else:
-    isbn11=isbn10+str(checkdigit)
-print(isbn11)
+for i in range(len(strMessage)):
+    ascValue = ord(strMessage[i])
+    ascValue2 = ascValue+2
+    print(f"The ASCII Value of {strMessage[i]} is {ascValue} or {ascValue2} if you add 2 to it")
