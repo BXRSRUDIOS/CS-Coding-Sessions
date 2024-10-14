@@ -1,4 +1,5 @@
 import sqlite3 as lite
+
 db="PupilDatav2.db"
 def createTable():
     con = lite.connect(db)  ## connects to the db
