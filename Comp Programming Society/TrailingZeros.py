@@ -34,8 +34,11 @@ def trailingZeros(n):
     if n == 1:
         return 0
     
+    # Calculate factorial of n
     factAns = factorial(factAns, n)
-    
+
+    # Start from end of string and count how many zeros there are
+    # As soon as one digit isn't a zero, return
     factAns = str(factAns)
     for j in range(len(factAns)-1, 0, -1):
         if factAns[j] == "0":
