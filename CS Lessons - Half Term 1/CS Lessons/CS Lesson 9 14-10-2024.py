@@ -1,4 +1,3 @@
-import sqlite3 as lite
 import time as t
 db = "PupilDatav2.db"
 
