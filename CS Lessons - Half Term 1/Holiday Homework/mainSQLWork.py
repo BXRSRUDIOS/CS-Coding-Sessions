@@ -67,10 +67,10 @@ def main():
     showList(boysDOB)
 
     # Task 6 - Adding Attribute Column for Achievement Points - Behaviour Points
-    createDiffAttribute = twoQuerySearch("ALTER TABLE Pupils", "ADD PointsDifference")
+    """createDiffAttribute = twoQuerySearch("ALTER TABLE Pupils", "ADD PointsDifference")
     boysSetupDifference = twoQuerySearch("UPDATE Pupils", "SET PointsDifference=(AchievementPoints-BehaviourPoints)")
     boysShowDifferences = twoQuerySearch("SELECT FullName, PointsDifference", "FROM Pupils")
-    showList(boysShowDifferences)
+    showList(boysShowDifferences)"""
     
 if __name__ == "__main__":
     main()
